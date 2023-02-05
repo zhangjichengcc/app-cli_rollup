@@ -1,5 +1,20 @@
 import moment from "js-moment";
 
-function demo(): void {
-  console.log(moment().format());
+/**
+ * @description: 格式化时间
+ * @param {Date} time
+ * @return {*}
+ */
+function formatDate(time: Date): string {
+  return moment(time).format();
 }
+
+/**
+ * @description: 返回当前时间
+ * @return {*}
+ */
+function now(): string {
+  return moment().format();
+}
+
+export { now, formatDate };
