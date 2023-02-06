@@ -5,8 +5,8 @@ import commonjs from "@rollup/plugin-commonjs";
 import alias from "@rollup/plugin-alias";
 import babel from "@rollup/plugin-babel";
 import { createRequire } from "node:module";
-import path from "node:path";
 import { fileURLToPath } from "node:url";
+import path from "node:path";
 
 const require = createRequire(import.meta.url);
 const __filename = fileURLToPath(import.meta.url);
