@@ -26,6 +26,7 @@ const plugins: RollupOptions["plugins"] = [
   babel({
     babelHelpers: "bundled",
     exclude: ["node_modules/**"],
+
     presets: [
       [
         "@babel/env",
@@ -46,13 +47,11 @@ const config: RollupOptions = {
       file: pkg.main,
       format: "es",
       exports: "auto",
-      banner: "#!/usr/bin/env node",
     },
     {
       file: pkg.module,
       format: "cjs",
       exports: "auto",
-      banner: "#!/usr/bin/env node",
     },
   ],
   plugins,
