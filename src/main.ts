@@ -1,4 +1,4 @@
 export { now, formatDate } from "@/utils/index";
-const hello = "Hi, enjoy your self";
+const hello: string = "Hi, enjoy your self";
 
 console.log(hello);
