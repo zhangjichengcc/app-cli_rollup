@@ -11,10 +11,11 @@ const require = createRequire(import.meta.url);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const pkg = require("./package.json");
+path.resolve();
 
 const plugins: RollupOptions["plugins"] = [
   alias({
-    entries: [{ find: "@", replacement: path.resolve(__dirname, "./src") }],
+    entries: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
   }),
   nodeResolve(),
   commonjs(),
