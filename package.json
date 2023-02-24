@@ -8,7 +8,9 @@
   "types": "./lib/declare/src/main.d.ts",
   "type": "module",
   "files": [
-    "lib"
+    "lib",
+    "README.md",
+    "LICENSE"
   ],
   "engines": {
     "node": ">=14.0.0"
